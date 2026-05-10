@@ -1,3 +1,4 @@
+//Full Adder  Design
 module fulladder (a,b,c,sum,carry);
     input a,b,c;
     output sum,carry;
