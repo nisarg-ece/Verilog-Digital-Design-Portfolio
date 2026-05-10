@@ -1,3 +1,4 @@
+// Half Adder Design
 module halfadder (a, b, sum, c);
     input a, b;
     output sum, c;
