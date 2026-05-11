@@ -1,3 +1,4 @@
+// ALU_4bit test bench
 module tb_ALU_4;
     reg [3:0] a, b;
     reg [2:0] sel;
