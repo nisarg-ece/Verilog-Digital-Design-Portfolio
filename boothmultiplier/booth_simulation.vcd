@@ -1,0 +1,100 @@
+$date
+	Tue Jun  2 11:28:26 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_booth_mul $end
+$var wire 1 ! q_1 $end
+$var wire 4 " q [3:0] $end
+$var wire 8 # local_product [7:0] $end
+$var wire 4 $ acc [3:0] $end
+$var reg 8 % expected_product [7:0] $end
+$var reg 4 & mul_p [3:0] $end
+$var reg 4 ' mul_plier [3:0] $end
+$scope module uut $end
+$var wire 4 ( mul_p [3:0] $end
+$var wire 4 ) mul_plier [3:0] $end
+$var reg 4 * acc [3:0] $end
+$var reg 4 + q [3:0] $end
+$var reg 1 ! q_1 $end
+$var integer 32 , i [31:0] $end
+$upscope $end
+$scope task print_header $end
+$upscope $end
+$scope task verify_case $end
+$var reg 4 - m [3:0] $end
+$var reg 4 . p [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 .
+b101 -
+b100 ,
+b1111 +
+b0 *
+b101 )
+b11 (
+b101 '
+b11 &
+bx %
+b0 $
+b1111 #
+b1111 "
+0!
+$end
+#10000
+0!
+b1111 $
+b1111 *
+b100 ,
+b11110100 #
+b100 "
+b100 +
+b11 '
+b11 )
+b1100 &
+b1100 (
+b11 -
+b1100 .
+b1111 %
+#20000
+1!
+b100 ,
+b110 "
+b110 +
+b11110110 #
+b1111 $
+b1111 *
+b1110 '
+b1110 )
+b101 &
+b101 (
+b1110 -
+b101 .
+b11110100 %
+#30000
+b100 ,
+1!
+b1001 "
+b1001 +
+b1001 #
+b0 $
+b0 *
+b1101 '
+b1101 )
+b1101 &
+b1101 (
+b1101 -
+b1101 .
+b11110110 %
+#40000
+b1001 %
