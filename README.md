@@ -18,3 +18,16 @@ RTL Design and Verification projects including ALUs, Multipliers, and FSMs
     ![Arithmetic and Logic Unit(4-bit) Waveform](images/alu_4_waveform.png)
     This waveform demonstrates the functional verification of the 4-bit ALU supporting 8 operations. The inputs (a, b) and output (out) are displayed in Hexadecimal for clarity. Note the transitions between operation selection (sel); the brief 'xx' states represent uninitialized logic during the very first simulation step before the first clock/delay edge stabilizes the result.
     
+
+4. Booth Multiplier (Design-4):
+    I designed, radix-2 Booth Multiplier circuit in Verilog to perform efficient multiplication of two 4-bit signed (2's complement) integers, producing a valid 8-bit output (`{acc, q}`) with behavioral modeling and veriied with testbench and analysed outcomes with GTK Waves.
+    
+    ![GTKWave Waveform](images/booth_multiplier_waveform.png)
+    
+    Algorithmic State Evaluation: Uses a combinational looping structure to analyze consecutive bit-pairs (`{q[0], q_1}`) to dynamically determine whether to add or subtract the multiplicand (`mul_p`), effectively optimizing the hardware addition operations.
+    
+    Unified Shift Matrix: Implements a single-cycle combined concatenation block `{acc, q, q_1} = {acc[3], acc, q};` to perform a flawless Arithmetic Right Shift (ASR). This preserves the sign extension bit (`acc[3]`) continuously across all iterations without risking data corruption or bit-slippage.
+    
+    Fully Synthesizable: Written using standard blocking assignments within a deterministic loop structure, making it perfectly ready for synthesis on standard FPGA/ASIC standard cell libraries.
+    
+    
