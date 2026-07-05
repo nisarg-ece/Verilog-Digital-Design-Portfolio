@@ -1,3 +1,4 @@
+// Half Adder (Gate Level)
 module tb_halfadder;
     reg a, b;       // Inputs are 'reg' in testbench
     wire sum, c;   // Outputs are 'wire'
