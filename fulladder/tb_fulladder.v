@@ -1,3 +1,4 @@
+//Full Adder test bench
 module tb_fulladder;
     reg a,b,c;
     wire sum, carry;
