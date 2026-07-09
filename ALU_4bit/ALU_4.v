@@ -1,4 +1,4 @@
-//ALU
+
 module ALU_4 (
     input [3:0] a,b,
     input [2:0] sel,
