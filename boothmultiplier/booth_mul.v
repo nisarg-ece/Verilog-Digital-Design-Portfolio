@@ -1,4 +1,4 @@
-// booth multiplier
+
 module booth_mul(
 
     input [3:0] mul_p,
